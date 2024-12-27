@@ -1,0 +1,468 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: rgba(238, 182, 235, 0.973);
+}
+
+.top-nav{
+    height:60px;
+    background-color: #0f1111;
+    display:flex;
+    color:#fff;
+     align-items: center;
+    justify-content: space-evenly;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:5;
+}
+.nav-logo{
+      width: 110px;
+     padding-left:12px;  
+}
+.nav-logo img{
+    width:100%;
+    }
+.border{
+    border:1px solid transparent;
+    padding:10px 6px;
+    height:90%;
+}
+.border:hover{
+    border:1px solid #fff;
+    border-radius:2px;
+}
+
+/* ...............Location Box............. */
+
+.location-icon{
+    display: flex;
+    align-items:center;
+}
+.no-underline{
+    text-decoration: none;
+    color:#fff;
+}
+.location-first{
+    margin-left: 14px;
+    color:#ccc;
+    font-size:0.9vw;
+}
+.location-second{
+    font-size:1vw;
+    font-weight:700;
+}
+.location-icon i{
+    font-size:1.2vw;
+    margin-right:3px;
+   
+/* ...............Search Box.............. */
+        
+}
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    height:43px;
+    border:0;
+    width:800px;
+    outline:none;
+   border:2px solid transparent;
+   border-radius:7px;
+}
+.nav-search:hover{
+border:2px solid rgb(253, 102, 15);
+
+}
+
+.All{
+    width:52px;
+    text-align:center;
+    font-size: 12px;
+    border:0;
+    outline:none;
+    background-color:#cfcdcd;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+}
+.search-input{
+    display:flex;
+    position:static;
+    font-size:15px;
+    /* padding:7px 10px 10px 0; */
+    width:100%;
+    margin:0;
+    border:0;
+    text-indent:8px;
+    outline:none;
+    padding-left: 5px;
+}
+.search-icon{
+    width:50px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:#000;
+    font-size:22px;
+    background-color:rgb(243, 150, 11);
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+}
+/* ...........Language Box.......... */
+
+.nav-language{
+    width:auto;
+
+}
+.lang-select{
+    display:flex;
+    align-items:center;
+    background: transparent;
+    transform: scale(1.1);
+    border:0;
+    color:#f5ecec;
+    width:52px;
+    text-align:center;
+    font-weight:660;
+    font-size:1vw;
+    margin:5px 1px 11px 0;
+}
+.lang-select img{
+    width:20px;
+}
+
+/* ............sign in box............ */
+
+
+
+.first-signin{
+    color:#f3eeee;
+    font-size:11px;
+   
+}
+.Second-signin{
+    font-size:1vw;
+    font-weight:800;
+    
+}
+
+/* ...........Cart Box........... */
+
+.nav-cart{
+    display:flex;
+    align-items:center;
+}
+.cart-icon i{
+font-size:14px;
+}
+.nav-cart p{
+    font-size:14px;
+    font-weight:700;
+}
+
+/* ...............Bottom Navbar............ */
+
+.bottom-nav{
+ background-color:#232f3e;
+ height:40px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ color:#fff;
+ padding:0 20px;
+ width:100%;
+ position:relative;
+ top: 60px;
+}
+
+.bnav-left{
+    display: flex;
+    align-items: center;
+}
+.options{
+    display:flex;
+}
+.bnav-left .all{
+display:flex;
+align-items:center;
+font-weight:600;
+}
+.bnav-left .all i{
+    font-size:1.4vw;
+    margin-right:5px;
+}
+.bnav-left .all p{
+    font-size:1vw;
+    
+}
+.bnav-left .options a{
+ text-decoration: none;
+ font-size:1.1vw;
+ margin:0 8px;
+}
+
+.bnav-right{
+    font-size:1.2vw;
+    font-weight:700;
+}
+
+/* ...............Hero Section.................. */
+
+.hero-section{
+    background-image: url("../component/Amazon_front-image.jpg");
+    height:300px;
+    background-size: cover;
+    width: 100%;
+    margin-top:60px;
+}
+
+/* ..............Products................ */
+
+.products-box{
+    width: 96%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:20px;
+}
+
+.box{
+    background: #fff;
+    height: auto;
+    padding:20px;
+    
+}
+
+.box img{
+    width:100%;
+    height: auto;
+}
+
+h3{
+    margin-bottom: 20;
+}
+
+.box a{
+    text-decoration: none;
+    font-size: 13px;
+    margin-top:20px;
+    color:#131921;
+    font-weight:normal;
+}
+
+/* ..............Scroll Product Section............. */
+
+.scroll-product{
+    width:96%;
+    margin:20px auto;
+    background:#fffcfc;
+    padding:30px;
+}
+
+.scroll-product .products{
+   display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: auto;
+}
+
+ .products::-webkit-scrollbar{
+    height: 8px;
+    cursor:pointer;
+   
+ }
+
+ .products::-webkit-scrollbar-track{
+
+    border-radius:10px;
+   
+ }
+
+ .products::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background: #fff;
+ }
+
+ .products::-webkit-scrollbar-thumb:hover{
+    background:#c77e7e;
+ }
+
+.products img{
+ margin:0 16px;
+ margin-bottom:15px;
+ width:200px;
+}
+
+/* ............Mini tv............. */
+
+.mini-tv{
+     background-color: #fff;
+     width:96%;
+     margin:20px auto;
+     padding: 20px;
+}
+
+.mini-tv img{
+    width:100%;
+}
+
+/* ............Sign in Section............. */
+
+.signin-section{
+width:310%;
+background: #fff;
+margin:20px 0;
+padding: 30px 0;
+
+}
+
+.signin-section .content{
+    width:100%;
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction:column;
+border:1px solid rgb(204, 203, 203);
+padding: 30px 0;
+
+}
+
+.signin-section .content p{
+font-size:12px;
+margin-bottom:5px;
+margin-top:5px;
+font-family: Arial, sans-serif;
+}
+
+.signin-section .content a{
+    font-size:11px;
+    text-decoration: none;
+    color:#007185;
+    box-sizing: border-box;
+    cursor:pointer;
+    line-height:25px;
+    font-family:"Amazon Ember", Arial, sans-serif;
+    
+    }
+
+.signin-section .content button{
+    font-size:13px;
+    font-weight:700;
+     padding:5px 90px;
+     background:rgba(255, 189, 67, 0.945);
+     outline:none;
+     border:0.5px solid rgba(31, 29, 6, 0.171);
+     border-radius:5px;
+     text-shadow:0 1px 0 #ffe093;
+    }
+
+    .signin-section .content a:hover{
+       
+       color:#c7511f;
+    }
+
+    .signin-section .content .ok{
+        font-size:11px;
+        
+    
+    }
+
+    /* ..................Footer................... */
+
+    .footer{
+        width:100%;
+        background: #232f3e;
+        color:#fff;
+
+    }
+
+    .footer .row{
+        display: flex;
+         justify-content: space-around;
+         padding: 50px 70px;
+         flex-wrap:wrap;
+    }
+
+    .footer .row .col{
+        padding:20px;
+    }
+
+    .footer .row .col ul li{
+        list-style:none;
+        color:#DDD;
+        line-height:120%;
+        font-size: 14px;
+    }
+    .footer .row .col ul li a{
+        font-size:1vw;
+        line-height:30px;
+
+    }
+
+    .footer .row .col ul li a:hover{
+        text-decoration: underline;
+    }
+
+    .col-heading{
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-size:1vw;
+    }
+
+    .bottom-footer{
+        width:80%;
+        margin:30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        margin-bottom:0;
+    }
+
+    .footer-logo img{
+     width:100px;
+    }
+
+    .footer-logo{
+        display: flex;
+        align-items:center;
+        justify-content:space-around;
+        width:300px;
+        margin: 30px 0;
+    }
+
+    .country{
+        margin-bottom: 30px;
+    }
+
+    .country ul{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-wrap: wrap;
+        width: 900px;
+    }
+
+    .country ul li{
+        list-style:none;
+        margin:5px 10px;
+        font-size:1vw;
+    }
+
+    .footer-logo button{
+    padding:8px 25px;
+    background:transparent;
+    border:0;
+    outline:none;
+    border:1px solid #ccc;
+    border-radius:4px;
+    color:#fff;
+    }
+
+    hr{
+        border:0.5px solid #575555;
+    }
