@@ -213,7 +213,7 @@ font-weight:600;
 /* ...............Hero Section.................. */
 
 .hero-section{
-    background-image: url("../component/Amazon_front-image.jpg");
+    background-image: url("Amazon_front-image.jpg");
     height:300px;
     background-size: cover;
     width: 100%;
